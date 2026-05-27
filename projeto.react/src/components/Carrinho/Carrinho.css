@@ -5,6 +5,7 @@
     width: 500px;
     height: 100%;
     position: absolute;
+    position:fixed;
     padding: 20px;
     top: 0;
     right: 0;
