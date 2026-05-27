@@ -1,4 +1,4 @@
-import './Navbar.css';
+import './NavBar.css';
 import '../Carrinho/Carrinho.css'
 import CardCadastro from '../CardLogin/CardCadastro';
 import CardLogin from '../CardLogin/Cardlogin';
