@@ -1,0 +1,132 @@
+.navbar {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    box-shadow: 5px 0px 8px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 5;
+}
+
+.options-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a,
+li {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    height: 80px;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+a:not(.logo):hover {
+    background-color: var(--cor-hover);
+}
+
+.myuser,
+.buy {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+}
+
+.carrinho {
+    cursor: pointer;
+}
+
+.itenscarrinho {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    font-size: 1rem;
+    background-color: #e17fff;
+    padding: 1px 6px;
+    border-radius: 100%;
+    color: var(--cor-texto);
+    font-weight: bold;
+}
+
+.active {
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .options-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    a,
+    li {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        justify-content: flex-start;
+    }
+
+    .myuser {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px;
+    }
+
+    .options-nav ul {
+        flex-direction: row;
+        font-size: 0.9rem;
+    }
+
+    a,
+    li {
+        font-size: 0.9rem;
+        padding: 5px;
+        width: 100px;
+    }
+
+    .myuser {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 28px;
+    }
+
+    .itenscarrinho {
+        font-size: 0.8rem;
+        top: 15px;
+        left: 0px;
+    }
+
+    .carrinho{
+        background-color: var(--cor-primaria);
+        width: 55px;
+    }
+}

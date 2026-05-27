@@ -1,0 +1,122 @@
+.container-card-cadastro,
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(82, 82, 82, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 6;
+}
+
+.closelogin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.mostrar-card {
+    display: flex;
+}
+
+.form-cadastro,
+.form-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 30px 70px;
+    width: 500px;
+    background-color: rgb(109, 109, 255);
+    border-radius: 20px;
+    box-shadow: 0 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input input {
+    width: 400px;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: var(--cor-background);
+    font-size: 1rem;
+}
+
+button:hover {
+    border: 1px solid var(--cor-hover);
+}
+
+button:active {
+    background: var(--cor-background);
+}
+
+.input-save-login {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .form-cadastro,
+    .form-login {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .form-cadastro,
+    .form-login {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .input input {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.9rem;
+        height: 36px;
+    }
+
+    .closelogin {
+        top: 5px;
+        right: 5px;
+        font-size: 0.9rem;
+    }
+}
